@@ -135,8 +135,8 @@ namespace cnt.ObjectBuilderNew
 		public void RegistrationDoesNotPreventGarbageCollection()
 		{
 			WeakRefDictionary<object, object> dict = new WeakRefDictionary<object, object>();
-			dict.Add("foo", new object());
-			GC.Collect(); //TODO: Garbage collector doesn't clean up WeakRef
+			AddEntry(dict);
+			GC.Collect(); 
 			Assert.Throws<KeyNotFoundException>(
 				() => { object unused = dict["foo"]; }
 			);
@@ -181,16 +181,12 @@ namespace cnt.ObjectBuilderNew
 		[Test]
 		public void CountReturnsNumberOfKeysWithLiveValues()
 		{
-			object o = new object();
 			WeakRefDictionary<object, object> dict = new WeakRefDictionary<object, object>();
 
-			dict.Add("foo1", o);
-			dict.Add("foo2", o);
-
+			Add2Entries(dict);
 			Assert.AreEqual(2, dict.Count);
 
-			o = null;
-			GC.Collect(); //TODO: failed to collect garbage
+			GC.Collect();
 
 			Assert.AreEqual(0, dict.Count);
 		}
@@ -199,11 +195,23 @@ namespace cnt.ObjectBuilderNew
 		public void CanAddItemAfterPreviousItemIsCollected()
 		{
 			WeakRefDictionary<object, object> dict = new WeakRefDictionary<object, object>();
-			dict.Add("foo", new object());
+			AddEntry(dict);
 
-			GC.Collect(); //TODO: Garbage collector failed to clean up the first entry
+			GC.Collect();
 
+			AddEntry(dict);
+		}
+
+		private void AddEntry(WeakRefDictionary<object, object> dict)
+        {
 			dict.Add("foo", new object());
+        }
+
+		private void Add2Entries(WeakRefDictionary<object, object> dict)
+		{
+			object o = new object();
+			dict.Add("foo1", o);
+			dict.Add("foo2", o);
 		}
 	}
 }
