@@ -158,8 +158,16 @@ namespace cnt.ObjectBuilderNew
 
 		private TObject DecodeNullObject<TObject>(object innerValue)
 		{
-			if (innerValue is NullObject)
-				return default(TObject);
+			//if (innerValue is NullObject)
+			//if (innerValue.Name == "NullObject") //doesn't work because inner value is of type object.  Cast to SystemType would fail if object is not of type SystemType I think
+			if (innerValue is Type)
+			{  
+				Type typeReturned = (Type) innerValue;
+				if (typeReturned.Name == "NullObject")
+					return default(TObject);
+				else 
+					return (TObject)innerValue;
+			}
 			else
 				return (TObject)innerValue;
 		}

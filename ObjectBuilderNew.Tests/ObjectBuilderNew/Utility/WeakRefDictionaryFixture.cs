@@ -202,6 +202,15 @@ namespace cnt.ObjectBuilderNew
 			AddEntry(dict);
 		}
 
+        [Test]
+		public void CanAddReferenceToType()
+        {
+			WeakRefDictionary<string, Type> dict = new WeakRefDictionary<string, Type>();
+			
+			dict.Add("ExceptionType", typeof(Exception));
+			Assert.IsNotNull(dict["ExceptionType"]);
+		}
+
 		private void AddEntry(WeakRefDictionary<object, object> dict)
         {
 			dict.Add("foo", new object());
