@@ -106,6 +106,87 @@ namespace Cnt.ObjectBuilder.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Calling constructor({0}).
+        /// </summary>
+        internal static string CallingConstructor {
+            get {
+                return ResourceManager.GetString("CallingConstructor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Calling method {0}({1}).
+        /// </summary>
+        internal static string CallingMethod {
+            get {
+                return ResourceManager.GetString("CallingMethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Calling IBuilderAware.OnBuiltUp().
+        /// </summary>
+        internal static string CallingOnBuiltUp {
+            get {
+                return ResourceManager.GetString("CallingOnBuiltUp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Calling IBuilderAware.OnTearingDown().
+        /// </summary>
+        internal static string CallingOnTearingDown {
+            get {
+                return ResourceManager.GetString("CallingOnTearingDown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Setting property {0}({1}).
+        /// </summary>
+        internal static string CallingProperty {
+            get {
+                return ResourceManager.GetString("CallingProperty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Can not create an instance of type &apos;{0}&apos;..
+        /// </summary>
+        internal static string CannotCreateInstanceOfType {
+            get {
+                return ResourceManager.GetString("CannotCreateInstanceOfType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In class &apos;{0}&apos;, cannot inject value on property &apos;{1}&apos; because it is read-only..
+        /// </summary>
+        internal static string CannotInjectReadOnlyProperty {
+            get {
+                return ResourceManager.GetString("CannotInjectReadOnlyProperty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not locate dependency &quot;{0}&quot;..
+        /// </summary>
+        internal static string DependencyMissing {
+            get {
+                return ResourceManager.GetString("DependencyMissing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Too many dependency injection attributes defined on {0}.{1}..
+        /// </summary>
+        internal static string InvalidAttributeCombination {
+            get {
+                return ResourceManager.GetString("InvalidAttributeCombination", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Invalid enumeration value..
         /// </summary>
         internal static string InvalidEnumerationValue {
@@ -124,6 +205,42 @@ namespace Cnt.ObjectBuilder.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Missing policy to build {0} named &apos;{1}&apos;..
+        /// </summary>
+        internal static string MissingPolicyNamed {
+            get {
+                return ResourceManager.GetString("MissingPolicyNamed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Missing policy to build unnamed {0}..
+        /// </summary>
+        internal static string MissingPolicyUnnamed {
+            get {
+                return ResourceManager.GetString("MissingPolicyUnnamed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not find an appropriately matching constructor..
+        /// </summary>
+        internal static string NoAppropriateConstructor {
+            get {
+                return ResourceManager.GetString("NoAppropriateConstructor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registered as singleton.
+        /// </summary>
+        internal static string SingletonRegistered {
+            get {
+                return ResourceManager.GetString("SingletonRegistered", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to [BuilderBase] Finished TearDown on {0}.
         /// </summary>
         internal static string TearDownFinished {
@@ -138,6 +255,24 @@ namespace Cnt.ObjectBuilder.Properties {
         internal static string TearDownStarting {
             get {
                 return ResourceManager.GetString("TearDownStarting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mapped to {0} / {1}.
+        /// </summary>
+        internal static string TypeMapped {
+            get {
+                return ResourceManager.GetString("TypeMapped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to While resolving dependencies for {2}, the provided type {1} is not compatible with {0}..
+        /// </summary>
+        internal static string TypeNotCompatible {
+            get {
+                return ResourceManager.GetString("TypeNotCompatible", resourceCulture);
             }
         }
     }

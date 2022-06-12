@@ -132,16 +132,61 @@
   <data name="BuildUpStarting" xml:space="preserve">
     <value>[BuilderBase] Starting BuildUp on {0} with ID {1}</value>
   </data>
+  <data name="CallingConstructor" xml:space="preserve">
+    <value>Calling constructor({0})</value>
+  </data>
+  <data name="CallingMethod" xml:space="preserve">
+    <value>Calling method {0}({1})</value>
+  </data>
+  <data name="CallingOnBuiltUp" xml:space="preserve">
+    <value>Calling IBuilderAware.OnBuiltUp()</value>
+  </data>
+  <data name="CallingOnTearingDown" xml:space="preserve">
+    <value>Calling IBuilderAware.OnTearingDown()</value>
+  </data>
+  <data name="CallingProperty" xml:space="preserve">
+    <value>Setting property {0}({1})</value>
+  </data>
+  <data name="CannotCreateInstanceOfType" xml:space="preserve">
+    <value>Can not create an instance of type '{0}'.</value>
+  </data>
+  <data name="CannotInjectReadOnlyProperty" xml:space="preserve">
+    <value>In class '{0}', cannot inject value on property '{1}' because it is read-only.</value>
+  </data>
+  <data name="DependencyMissing" xml:space="preserve">
+    <value>Could not locate dependency "{0}".</value>
+  </data>
+  <data name="InvalidAttributeCombination" xml:space="preserve">
+    <value>Too many dependency injection attributes defined on {0}.{1}.</value>
+  </data>
   <data name="InvalidEnumerationValue" xml:space="preserve">
     <value>Invalid enumeration value.</value>
   </data>
   <data name="KeyAlreadyPresentInDictionary" xml:space="preserve">
     <value>An item with the given key is already present in the dictionary.</value>
   </data>
+  <data name="MissingPolicyNamed" xml:space="preserve">
+    <value>Missing policy to build {0} named '{1}'.</value>
+  </data>
+  <data name="MissingPolicyUnnamed" xml:space="preserve">
+    <value>Missing policy to build unnamed {0}.</value>
+  </data>
+  <data name="NoAppropriateConstructor" xml:space="preserve">
+    <value>Could not find an appropriately matching constructor.</value>
+  </data>
+  <data name="SingletonRegistered" xml:space="preserve">
+    <value>Registered as singleton</value>
+  </data>
   <data name="TearDownFinished" xml:space="preserve">
     <value>[BuilderBase] Finished TearDown on {0}</value>
   </data>
   <data name="TearDownStarting" xml:space="preserve">
     <value>[BuilderBase] Starting TearDown on {0}</value>
+  </data>
+  <data name="TypeMapped" xml:space="preserve">
+    <value>Mapped to {0} / {1}</value>
+  </data>
+  <data name="TypeNotCompatible" xml:space="preserve">
+    <value>While resolving dependencies for {2}, the provided type {1} is not compatible with {0}.</value>
   </data>
 </root>

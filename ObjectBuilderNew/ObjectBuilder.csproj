@@ -14,7 +14,7 @@
     <AssemblyName>Cnt.ObjectBuilder</AssemblyName>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Description>Microsoft Patterns &amp; Practices ObjectBuilder dependency injection framework updated to .NET 6.0</Description>
-    <PackageLicenseFile>C:\dev\NewObjectBuilder\EULA.rtf</PackageLicenseFile>
+    <PackageLicenseFile>EULA.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,6 +31,10 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\EULA.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>

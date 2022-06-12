@@ -1,14 +1,6 @@
-﻿//===============================================================================
-// Microsoft patterns & practices
-// ObjectBuilder Application Block
-//===============================================================================
-// Copyright � Microsoft Corporation.  All rights reserved.
-// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-// FITNESS FOR A PARTICULAR PURPOSE.
-//===============================================================================
-// Copyright (c) cntsoftware.com
+﻿// Copyright © 2022 cntsoftware.com
+// Contains software or other content adapted from Microsoft patterns & practices ObjectBuilder,
+// © 2006 Microsoft Corporation. All rights reserved.
 
 using System;
 using System.Collections;
