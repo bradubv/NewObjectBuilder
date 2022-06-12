@@ -5,12 +5,16 @@
     <ApplicationIcon />
     <Win32Resource></Win32Resource>
     <Version>1.0.0</Version>
-    <Authors>Bogdan V. Bradu</Authors>
-    <Company>CNTSoftware</Company>
-    <PackageId>ObjectBuilderNew</PackageId>
-    <RootNamespace>cnt.ObjectBuilderNew</RootNamespace>
+    <Authors>bradubv</Authors>
+    <Company>cntsoftware.com</Company>
+    <PackageId>cnt.ObjectBuilder</PackageId>
+    <RootNamespace>Cnt.ObjectBuilder</RootNamespace>
     <PackageDescription>Microsofts Patterns and Practices ObjectBuilder updated to work in newer versions of .NET</PackageDescription>
     <PackageTags>Dependency Injection; Smart Client Application Block; CAB</PackageTags>
+    <AssemblyName>Cnt.ObjectBuilder</AssemblyName>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Description>Microsoft Patterns &amp; Practices ObjectBuilder dependency injection framework updated to .NET 6.0</Description>
+    <PackageLicenseFile>C:\dev\NewObjectBuilder\EULA.rtf</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -5,7 +5,7 @@
 
     <IsPackable>false</IsPackable>
 
-    <RootNamespace>cnt.ObjectBuilderNew</RootNamespace>
+    <RootNamespace>Cnt.ObjectBuilder</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

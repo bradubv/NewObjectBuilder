@@ -1,12 +1,18 @@
 ﻿//===============================================================================
-// Ripped off from:
 // Microsoft patterns & practices
 // ObjectBuilder Application Block
 //===============================================================================
+// Copyright � Microsoft Corporation.  All rights reserved.
+// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
+// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
+// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+// FITNESS FOR A PARTICULAR PURPOSE.
+//===============================================================================
+// Copyright (c) cntsoftware.com
 
 using System;
 
-namespace cnt.ObjectBuilderNew
+namespace Cnt.ObjectBuilder
 {
 	/// <summary>
 	/// Represents the context in which a build-up or tear-down operation runs.

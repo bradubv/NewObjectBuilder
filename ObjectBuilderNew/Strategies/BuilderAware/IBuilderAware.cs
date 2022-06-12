@@ -13,15 +13,20 @@
 namespace Cnt.ObjectBuilder
 {
 	/// <summary>
-	/// Represents an object that can configure a builder.
+	/// Implemented on a class when it wants to receive notifications
+	/// about the build process.
 	/// </summary>
-	/// <typeparam name="TStageEnum">The builder's stage enumeration</typeparam>
-	public interface IBuilderConfigurator<TStageEnum>
+	public interface IBuilderAware
 	{
 		/// <summary>
-		/// Applies the configuration to the builder.
+		/// Called by the <see cref="BuilderAwareStrategy"/> when the object is being built up.
 		/// </summary>
-		/// <param name="builder">The builder to apply the configuration to.</param>
-		void ApplyConfiguration(IBuilder<TStageEnum> builder);
+		/// <param name="id">The ID of the object that was just built up.</param>
+		void OnBuiltUp(string id);
+
+		/// <summary>
+		/// Called by the <see cref="BuilderAwareStrategy"/> when the object is being torn down.
+		/// </summary>
+		void OnTearingDown();
 	}
 }
